@@ -33,7 +33,7 @@ var cache = (duration) => {
 }
 
 app.get("/", (req, res) => {
-  res.send("Express on Vercel");
+  res.send("First Movers API - up and working!");
 });
 
 // Routes
