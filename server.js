@@ -41,3 +41,6 @@ app.use('/prices', cache(30), prices);
 app.listen(4000, () => {
   console.log('CurioInfo backend - listening on port ' + process.env.PORT + '!')
 });
+
+// Export the Express API for Vercel's build process
+module.exports = app;
