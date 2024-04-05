@@ -32,6 +32,10 @@ var cache = (duration) => {
   }
 }
 
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
+
 // Routes
 let prices = require("./_routes/prices.controller");
 app.use('/prices', cache(30), prices);
